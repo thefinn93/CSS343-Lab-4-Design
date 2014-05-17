@@ -1,11 +1,13 @@
-#ifndef TRANSACTIONS_H
-#define TRANSACTIONS_H
-class Transactions {
+#ifndef TRANSACTION_H
+#define TRANSACTION_H
+class Transaction {
 public:
-  // Checks out product to customer
-  bool checkOut(Product product, Customer customer);
-  
-  // Registers that product has been returned by customer
-  bool checkIn(Prodct product, Customer customer);
+  // Checks out product to customer, creating the Transaction object
+  Transaction(Product* productCheckedOut, Customer* customerCheckingOut);
+private:
+  // The product that the transction is performed upon
+  Product* product;
+  // The customer that performed the transaction
+  Customer* customer;
 }
 #endif
