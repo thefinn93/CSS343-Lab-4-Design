@@ -3,8 +3,9 @@
 class Transactions {
 public:
   // Checks out product to customer
-  checkOut(Product product, Customer customer);
+  bool checkOut(Product product, Customer customer);
+  
   // Registers that product has been returned by customer
-  checkIn(Prodct product, Customer customer);
+  bool checkIn(Prodct product, Customer customer);
 }
 #endif
