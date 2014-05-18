@@ -7,7 +7,6 @@ class Product {
 	void display();
 	void sort();
 	Product& retrieve();
-
 	string name;
 };
 #endif
