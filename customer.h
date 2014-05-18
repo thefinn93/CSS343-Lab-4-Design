@@ -23,8 +23,7 @@ public:
 private:
   string name;      // The customer's name
   int pin;          // The customer's PIN
-  LinkedList history;  // The customer's rental history
-  HashMap CurrentlyOut;  // The items the customer has out currently
+  CustomerHistory history;  // The customer's rental history
 }
 
 #endif

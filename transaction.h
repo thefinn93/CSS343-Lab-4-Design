@@ -11,5 +11,8 @@ public:
   // The customer that performed the transaction
   Customer* customer;
 
+  // These are going to be part of a linked list, so we need a next and previous
+  Transaction* older;
+  Transaction* newer;
 }
 #endif
